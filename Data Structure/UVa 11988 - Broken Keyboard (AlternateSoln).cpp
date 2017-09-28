@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// We keep a long string for all text inserted to end. 
-// Whenever we go to first, we start start an empty string 
-// and again when we go to last we end the string and store this piece of string.
-// At last we print the beginning pieces of strings, then everything inserted t end
+// We keep a long string 'res', this will store everything inserted to end. 
+// When we go to beginning, we satar another small string, and grow that untill
+// we go to end. Store these pieces of string and at last print them first. Then 
+// Print the long string. 
+
 int main() {
     string str;
     while(getline(cin, str)) {
